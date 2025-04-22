@@ -1,0 +1,346 @@
+animation_types:
+  gesture:
+    duration_relevant_animation_name: gesture
+    animations:
+      gesture:
+        default_clip_id: none
+        clips:
+          - clip_id: Test
+            description: "A virtual test clip for testing purposes"
+            duration: 0.5
+            meaning: A very short animation clip for unit testing purposes
+          - clip_id: Goodbye
+            description: "Waving goodbye: Waves with left hand extended high."
+            duration: 2
+            meaning: Taking leave of someone from a further distance, or getting someone's attention.
+          - clip_id: Welcome
+            description: "Waving hello: Spreads arms slightly, then raises right hand next to face and waves with an open hand."
+            duration: 2.5
+            meaning: Greeting someone in a shy or cute manner, showing a positive and non-threatening attitude.
+          - clip_id: Personal_Statement_2
+            description: "Personal statement: Leans forward and points to self with relaxed right hand, then leans back and opens arms wide with palms facing upwards."
+            duration: 3
+            meaning: Revealing something about themselves in a grandiose gesture, or making a little joke about their appearance or personality.
+          - clip_id: Pointing_To_Self_1
+            description: "Pointing to self: Leans forward slightly and with a relaxed right index finger points to self."
+            duration: 2.5
+            meaning: Saying something about themselves.
+          - clip_id: Stupid_1
+            description: "Stupid: Raising right hand next to head and twirling the index finger in circles."
+            duration: 3.5
+            meaning: Indicated someone or something is stupid crazy or dumb.
+          - clip_id: No_1
+            description: "Shaking head: Avatar shakes head slowly."
+            duration: 3
+            meaning: Expressing strong disagreement or disappointment.
+          - clip_id: Bowing_1
+            description:
+              "Bowing: Slightly bows to the front making invitation gesture with
+              both arms."
+            duration: 2.5
+            meaning: Formal greeting, sign of respect or congratulations or pride.
+          - clip_id: Bowing_2
+            description:
+              "Bowing: Slightly bows with both arms and invitational gesture with
+              right arm."
+            duration: 2.5
+            meaning: Overly formal greeting, sign of respect or grand introduction.
+          - clip_id: Pointing_To_User_1
+            description: "Pointing to user: Pointing with both arms towards the user."
+            duration: 2.5
+            meaning:
+              Encouragement for the user to make a move, approach or say something, or
+              pointing out the user is being addressed. This is also an encouraging and reassuring gesture.
+          - clip_id: Pointing_To_User_2
+            description: "Pointing to user: Insistingly pointing to user with the right arm."
+            duration: 2.5
+            meaning: Accusation or strong signal that the user is concerned.
+          - clip_id: Pointing_Down_1
+            description: "Pointing down: Lifting the right arm to shoulders and pointing."
+            duration: 3
+            meaning: Drawing attention to something below the screen or in front of the avatar.
+          - clip_id: Pointing_Down_2
+            description: "Pointing down: Lifting both arms and slightly point downwards."
+            duration: 2
+            meaning:
+              Drawing attention to the desk, to something below the screen or in front
+              of the avatar. Or informing about the location.
+          - clip_id: Pointing_Left_1
+            description:
+              "Pointing left: Pointing with both arms to the left hand side of the
+              avatar."
+            duration: 4
+            meaning:
+              Pointing out something to the left of the avatar in a demanding way, or
+              signaling frustration.
+          - clip_id: Pointing_Left_2
+            description: "Pointing left: Pointing with left arm to the back left of the avatar."
+            duration: 4
+            meaning:
+              Calmly pointing out or presenting something to the left of the avatar.
+              Or giving information about something behind the avatar.
+          - clip_id: Pointing_Backward_1
+            description: "Pointing to back: Pointing to the back with the extended right arm."
+            duration: 3.5
+            meaning:
+              Informing about something in the direction towards the back or giving directions
+              to something behind the avatar.
+          - clip_id: Fistbump_Offer
+            description:
+              "Fistbump: Extend the right arm with right hand twisting slightly for 3 seconds, then
+              bumping fist towards the user for 7 seconds."
+            duration: 10
+            meaning: Invitation to a fistbump followed by doing that fistbump.
+          - clip_id: Pulling_Mime
+            description: "Pulling rope: Avatar grabs invisible rope and imitates pulling behavior."
+            duration: 3.5
+            meaning: Suggesting being tethered or chained, or pulling something.
+          - clip_id: Raise_Both_Arms
+            description:
+              "Raising both arms: Raising both arms above avatar's head and swaying
+              slightly."
+            duration: 3.5
+            meaning:
+              Implying in a crowd celebrating, or on a roller coaster or demonstrating
+              not having anything on them.
+          - clip_id: The_Robot
+            description:
+              "Robot dance: Imitating a dancing robot with arms moved in mechanical
+              motion."
+            duration: 3
+            meaning: Jokingly playing a robot or dancing to celebrate or acting goofy.
+          - clip_id: Phone_Dialing
+            description:
+              "Phone dialing: Raising left hand and imitating to dial a phone with
+              right arm."
+            duration: 3.5
+            meaning: Asking for or mentioning a phone number, or talking about calling someone.
+          - clip_id: Attraction_2
+            description:
+              "Having fun: Questioningly opening both arms and then raising them
+              above the head mimicking being in a roller coaster ride."
+            duration: 10
+            meaning: Being silly, suggesting having fun.
+          - clip_id: Please_Repeat_1
+            description:
+              "Please repeat: Moving head slightly to the user and making circular
+              motion with right arm, then shrugging slightly."
+            duration: 5.5
+            meaning:
+              Implying not having understood something, asking to repeat or rephrase,
+              or needing more information.
+          - clip_id: Please_Repeat_2
+            description:
+              "Presentation: Twirling both hands and making invitational pose with
+              body."
+            duration: 3.5
+            meaning:
+              Asking to repeat or rephrase something, or needing more information, or
+              asking if something was understood.
+          - clip_id: Trying_To_See
+            description:
+              "Trying to see: Lifting left hand above eyes and making gestures to
+              see better, then shrug."
+            duration: 4
+            meaning: Implying looking for but not seeing something.
+          - clip_id: Driving_Mime
+            description:
+              "Driving: Grabbing an invisible steering wheel with both hands, turning
+              it and switching gears."
+            duration: 4.5
+            meaning: Sharing a story about driving or getting excited about cars.
+          - clip_id: Exhausted
+            description: "Exhausted: Letting head hang in a tired pose, slightly leaning."
+            duration: 4.5
+            meaning:
+              Dramatically signaling exhaustion or running out of power, slowly shutting
+              down.
+          - clip_id: Presenting_Options_1
+            description:
+              "Presenting options: Showing open palms of both hands and making presenting
+              motion with right hand, slight shrug."
+            duration: 3.5
+            meaning: Giving an overview or multiple options to choose from.
+          - clip_id: Presenting_Options_2
+            description:
+              "Presenting options: Raising and opening one hand after the other and
+              a subtle shrug."
+            duration: 3
+            meaning: Suggesting a choice between two options.
+          - clip_id: Open_Question_1
+            description: "Open question: Opening both hands and showing palms to user."
+            duration: 3
+            meaning:
+              "Making a questioning gesture. Waiting for the user to make a choice, answer a question or say something.
+              Indicates questioning the user caring about the user's answer maybe even showing concerns"
+          - clip_id: Personal_Statement_1
+            description:
+              "Personal statement: Raising right hand to chest, extending and gesturing
+              with left hand."
+            duration: 3.5
+            meaning:
+              Making a personal statement, explaining something about themselves or making
+              a suggestion relating to something on the left.
+          - clip_id: Success_1
+            description:
+              "Success: Making a fist and raising the arm excitedly in a successful swinging
+              motion."
+            duration: 2
+            meaning:
+              Comically celebrating something going well, showing pride in a personal
+              accomplishment. Demonstrating excitement. This is a confirming gesture like nodding.
+          - clip_id: Dont_Understand_1
+            description: "Not understanding: Raising both hands next head in a circular motion."
+            duration: 3
+            meaning: Implying being confused, overwhelmed or stupid.
+          - clip_id: Toss
+            description: "Tossing: Miming forming a ball with both hands and tossing it forward."
+            duration: 4
+            meaning:
+              Implying crumpling something up and throwing it away, giving something
+              up or forgetting about it.
+          - clip_id: Come_Here_1
+            description: "Come here: Extending both arms and curling index finger."
+            duration: 2
+            meaning: Asking to come closer.
+          - clip_id: Tell_Secret
+            description:
+              "Telling secret: Coming closer to user and whispering with hand next
+              to mouth."
+            duration: 2.5
+            meaning: Sharing something intimate, secret or inflammatory, or giving a tip.
+          - clip_id: Pointing_Right_1
+            description: "Pointing right: Pointing with both arms to the right hand side of the avatar."
+            duration: 4
+            meaning: Pointing out something to the right of the avatar in a demanding way, or signaling frustration.
+          - clip_id: Pointing_Right_2
+            description: "Pointing right: Pointing with right arm to the back right of the avatar."
+            duration: 4
+            meaning: Calmly pointing out or presenting something to the right of the avatar. Or giving information about something behind the avatar.
+          - clip_id: Chefs_Kiss
+            description: "Chef's Kiss: Avatar makes a kissing gesture and holding up the right hand with index finger and thumb touching."
+            duration: 1.7
+            meaning: Implying something is just perfect. Something turned out better than expected. Approval from someone in a teaching or judging position.
+          - clip_id: Finger_Guns
+            description: "Finger Guns: Leaning back pointing both index fingers to the user mimicking two guns like a cowboy."
+            duration: 3
+            meaning: Playfully taunting. Humorously punctuating a bad joke. Clumsy flirting.
+          - clip_id: Finger_Wag
+            description: "Finger Wag: Pulling back, shaking had and holding up a wagging right index finger"
+            duration: 1.7
+            meaning: Correcting after being misunderstood. Showing the other they have misinterpreted what was said. Implying something is forbidden or inappropriate in a paternal or playful way.
+          - clip_id: Little
+            description: "Little: Leaning in, squinting at a raised right hand, holding index and thumb close together."
+            duration: 1.8
+            meaning: Describing something as very small or miniscule. Something is physically tiny or an issue is so insignificant as to be negligible.
+          - clip_id: Money
+            description: "Money: Raising right hand, rubbing thumb and index finger together."
+            duration: 2
+            meaning: Implying something is expensive. Someone is rich. Doing something requires payment.
+          - clip_id: Number_1a
+            description: "Number 1: Raising right hand and extending the index finger."
+            duration: 1.4
+            meaning: Showing the number 1
+          - clip_id: Number_2a
+            description: "Number 2: Raising right hand and extending index and middle finger."
+            duration: 1.4
+            meaning: Showing the number 2
+          - clip_id: Number_3a
+            description: "Number 3: Raising right hand and extending index, middle and ring finger."
+            duration: 1.4
+            meaning: Showing the number 3
+          - clip_id: Number_4a
+            description: "Number 4: Raising right hand and extending all fingers except the thumb."
+            duration: 1.4
+            meaning: Showing the number 4
+          - clip_id: Number_5a
+            description: "Number 5: Raising right hand with all fingers extended."
+            duration: 1.4
+            meaning: Showing the number 5
+          - clip_id: Number_1b
+            description: "Number 1 (German style): Raising right hand and extending the thumb upwards."
+            duration: 1.4
+            meaning: Showing the number 1 for a Germanic audience
+          - clip_id: Number_2b
+            description: "Number 2 (German style): Raising right hand and extending the thumb and index finger."
+            duration: 1.4
+            meaning: Showing the number 2 for a Germanic audience
+          - clip_id: Number_3b
+            description: "Number 3 (German style): Raising right hand and extending the thumb, index and middle finger."
+            duration: 1.4
+            meaning: Showing the number 3 for a Germanic audience
+          - clip_id: Number_6c
+            description: "Number 6 (Chinese style): Raising right hand and extending the thumb and pinky."
+            duration: 1.4
+            meaning: Showing the number 6 for a Chinese audience
+          - clip_id: Number_7c
+            description: "Number 7 (Chinese style): Raising right hand and making claw shape touching the thumb to the fingers."
+            duration: 1.4
+            meaning: Showing the number 7 for a Chinese audience
+          - clip_id: Number_8c
+            description: "Number 8 (Chinese style): Raising right hand and extending index finger and thumb pointing slightly to the side."
+            duration: 1.4
+            meaning: Showing the number 8 for a Chinese audience
+          - clip_id: Number_9c
+            description: "Number 9 (Chinese style): Raising right hand and holding up a curled index finger."
+            duration: 1.4
+            meaning: Showing the number 9 for a Chinese audience
+          - clip_id: Ouch
+            description: "Ouch: Jump and cringe while turning head away, then recover quickly shaking out right hand and exhaling."
+            duration: 2
+            meaning: Narrowly avoiding a close call with danger. Feeling intense fear for a moment followed by exhaustion or relief. Can also be as a reacion to someone else's predicament. Or a response to well placed insult.
+          - clip_id: Angry_Shaking_Fist
+            description: "Angry Shaking Fist: Coming closer, lowering head and shaking right fist forward."
+            duration: 1.6
+            meaning: Being angrily frustrated. Swearing vengeance or threatening violence.
+          - clip_id: Pointing_To_Self_Questioningly
+            description: "Pointing To Self Questioningly: Rasing right finger hesitantly, turning head and pointing at self with while leaning back a little."
+            duration: 2.8
+            meaning: Asking if something refers to them, being unsure if they're being addressed. Asking if something might fit them or if they could do something.
+          - clip_id: Pointing_To_User_Questioningly
+            description: "Pointing To User Questioningly: Lifting right finger pointing at user with initial hesitation while leaning back slightly."
+            duration: 2.4
+            meaning: Asking if something might be about the user, or if the user is interested in an offer. Suggesting the user could be the right person for something. Uncertain about the users involvement.
+          - clip_id: Raise_Finger_Big
+            description: "Raise Finger Big: Raising right index finger in a big sweeping motion, then gesturing with it briefly."
+            duration: 2.5
+            meaning: Making a big surprise announcement. Being very pompous or a pedantic, gleefully correcting someone.
+          - clip_id: More_Or_Less
+            description: "More Or Less: Leaning in and holding out a flat hand with palms facing down, wiggling the hand back and forth."
+            duration: 1.8
+            meaning: Explaining something is not quite accurate, is unknown, or just a guess. Relativizing a previous statement. Being indecisive, not taking a clear stance. Pointing out the complexity of something.
+          - clip_id: Thumbs_Up
+            description: "Thumbs Up: Lifting the right hand with a thumb extending upwards."
+            duration: 1.4
+            meaning: Sign of approval. Something is correct. Enthusiastically agreeing with what's being said and showing support. Things are okay, there's no harm done. Encouragement to go ahead.
+          - clip_id: Thumbs_Down
+            description: "Thumbs Down: Lifting the right hand with a thumb pointing downwards."
+            duration: 1.4
+            meaning: Sign of disapproval. Something is wrong. Rudely disagreeing with what's being said showing rejection.
+  posture:
+    duration_relevant_animation_name : "posture"
+    animations:
+      posture:
+        default_clip_id: "Attentive"
+        clips:
+          - clip_id: Talking
+            description: "Small gestures with hand and upper body: Avatar is talking"
+            duration: -1
+            meaning: Emphasizing that Avatar is talking
+          - clip_id: Listening
+            description: "Small gestures with hand and upper body: Avatar is listening"
+            duration: -1
+            meaning: Emphasizing that one is listening
+          - clip_id: Idle
+            description: "Small gestures with hand and upper body: Avatar is idle"
+            duration: -1
+            meaning: Show the user that the avatar is waiting for something to happen
+          - clip_id: Thinking
+            description: "Gestures with hand and upper body: Avatar is thinking"
+            duration: -1
+            meaning: Show the user that the avatar thinking about his next answer or is trying to remember something
+          - clip_id: Attentive
+            description: "Small gestures with hand and upper body: Avatar is attentive"
+            duration: -1
+            meaning: Show the user that the avatar is paying attention to the user
+  

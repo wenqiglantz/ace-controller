@@ -1,0 +1,19 @@
+[project]
+name = "speech-to-speech-example"
+version = "0.1.0"
+description = "NVIDIA ACE Pipecat Speech only Examples"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+ "nvidia-pipecat",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+nvidia-pipecat = { path = "../../.", editable = true }
+
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

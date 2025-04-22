@@ -1,85 +1,82 @@
-# __PLC_OSS__ Standard Repo Template
+# ACE Controller SDK
 
-This is repo is the standard NVIDIA OSS repo with the following items to make all NVIDIA repos use a consistent base:
+The ACE Controller SDK allows you to build your own ACE Controller service to manage multimodal, real-time interactions with voice bots and avatars using NVIDIA ACE. With the SDK, you can create controllers that leverage the Python-based open-source [Pipecat framework](https://github.com/pipecat-ai/pipecat) for creating real-time, voice-enabled, and multimodal conversational AI agents. The SDK contains enhancements to the Pipecat framework, enabling developers to effortlessly customize, debug, and deploy complex pipelines while integrating robust NVIDIA Services into the Pipecat ecosystem.
 
-- GitHub File Templates
-  - Issue templates
-  - PR template
-- GitHub Repo Templates
-  - Issue/PR labels
-  - Project tracking and release board templates
-- Files
-  - Root
-    - `CITATION.md` with RAPIDS info pre-filled
-    - `CHANGELOG.md` skeleton
-    - `CODE_OF_CONDUCT.md` file with our standard code of conduct
-    - `CONTRIBUTING.md` skeleton
-    - `LICENSE` file with Apache 2.0 License
-      - Use the [Confluence page](https://confluence.nvidia.com/pages/viewpage.action?pageId=788418816) for other licenses 
-    - `print_env.sh` for debugging support
-    - `README.md` skeleton
-    - `SECURITY.md` file with our standard security instructions
-    - `CLA.md` file (delete if not using MIT or BSD licenses)
-  - Root/.github
-    - /ISSUE_TEMPLATE
-      - Templates for each issue type (`Bug`, `Doc`, `Feature`, `Question`)
-      - `config.yml`
-    - /workflow-templates
-      - `add_issue_to_project.yml`
-      - `add_issue_to_project_raw.yml`
-      - `CODEOWNERS`
-      - `PULL_REQUEST_TEMPLATE.md`
-  - Root/maintainers
-    - See the readme in this folder for specifics
+## Main Features
+
+- **Pipecat Extension:** A Pipecat extension to connect with ACE services and NVIDIA NIMs, facilitating the creation of human-avatar interactions. The NVIDIA Pipecat library augments [the Pipecat framework](https://github.com/pipecat-ai/pipecat) by adding additional frame processors and services, as well as new multimodal frames to enhance avatar interactions. This includes the integration of NVIDIA services and NIMs such as [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/index.html), [NVIDIA Audio2Face](https://build.nvidia.com/nvidia/audio2face-3d), and [NVIDIA Foundational RAG](https://build.nvidia.com/nvidia/build-an-enterprise-rag-pipeline).
+
+- **HTTP and WebSocket Server Implementation:** The SDK provides a FastAPI-based HTTP and WebSocket server implementation compatible with ACE. It includes functionality for stream and pipeline management by offering new Pipecat pipeline runners and transports. For ease of use and distribution, this functionality is currently included in the `nvidia-pipecat` Python library as well.
+
+## ACE Controller Microservice
+
+The ACE Controller SDK was used to build the [ACE Controller Microservice](https://docs.nvidia.com/ace/ace-controller-microservice/latest/index.html).Check out the [ACE documentation](https://docs.nvidia.com/ace/tokkio/latest/customization/customization-options.html) for more details on how to configure the ACE Controller MS with your custom pipelines.
 
 
-## Usage for new NVIDIA OSS repos
+## Getting Started
 
-1. Clone this repo
-1. Find/replace all in the clone of `___PROJECT___` and `__PROJECT_NAME__` and replace with the name of the new library
-1. Inspect all files to make sure all replacements work and update text as needed
-1. Customize issue/PR templates to fit the repo
-    - There are two issue template formats provided, simple `.md` templates and more interactive `.yml` form templates
-    - Delete the overlapping templates you are not using (ie if you decide to use the `.yml`s delete the `.md` templates
-    - In `config.yml` determine if you will allow issues to be created outside of the templates
-    - In `config.yml` determine if you will use question issue types, or use GitHub discussions 
-1. Update `CHANGELOG.md` with next release version
-1. Add developer documentation to the end of the `CONTRIBUTING.md` that is project specific and useful for developers contributing to the project
-    - The goal here is to keep the `README.md` light, so the development/debugging information should go in `CONTRIBUTING.md`
-1. Complete `README.md` with project description, quick start, install, and contribution information
-1. Copy the [template project](https://github.com/orgs/rapidsai/projects/80/views/1) into your org and name as appropriate
-    - Follow the instructions in the project's [readme](https://github.com/orgs/rapidsai/projects/80/views/1?pane=info) to add your issues
-    - Update your project's readme as fits best for your team
-    - Use the URL of the newly created project in the `.github/workflow-templates/add_to_project.yml` GHA automations
-. Check `LICENSE` file is correct (update year) 
-. Change git origin to point to new repo and push
-. Remove the line break below and everything above it
+The NVIDIA Pipecat package is released as a wheel on PyPI. Create a Python virtual environment and use the pip command to install the nvidia-pipecat package.
 
-## Usage for existing NVIDIA OSS repos
+```bash
+pip install nvidia-pipecat
+```
 
-1. Follow the steps 1-8 above, but add the files to your existing repo and merge
+You can start building pipecat pipelines utilizing services from the NVIDIA Pipecat package. For more details, follow [the ACE Controller](https://docs.nvidia.com/ace/ace-controller-microservice/latest/index.html) and [the Pipecat Framework](https://docs.pipecat.ai/getting-started/overview) documentation.
 
-<!-- REMOVE THE LINE BELOW AND EVERYTHING ABOVE -->
------------------------------------------
-# [Project Title]
+## Hacking on the framework itself
 
-# Overview
-Provide an overview of the project.
-What the project does?
-Why the project is useful?
+If you wish to work directly with the source code or modify services from the nvidia-pipecat package, you can utilize either the UV or Nix development setup as outlined below.
 
-# Get Started
-Describe the get-started or installation guidelines or provide a link to the installation instruction
+### Using UV
 
-# Contribution Guidelines
-Provide the link to the CONTRIBUTING file(s).
 
-# Community
-Provide the channel for community communications.
+To get started, first install the [UV package manager](https://docs.astral.sh/uv/#highlights). 
 
-# References
-Provide a list of related references
+Then, create a virtual environment with all the required dependencies by running the following commands:
+```bash
+uv venv
+uv sync
+source .venv/bin/activate
+```
 
-# License
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+Once the environment is set up, you can begin building pipelines or modifying the services in the source code.
+
+If you wish to contribute your changes to the repository, please ensure you run the unit tests, linter, and formatting tool.
+
+To run unit tests, use:
+```
+uv run pytest
+```
+
+To format the code, use:
+```bash
+ruff format
+```
+
+To run the linter, use:
+```
+ruff check
+```
+
+
+### Using Nix
+
+To set up your development environment using [the Nix](https://nixos.org/download/#nix-install-linux), follow these steps:
+
+Initialize the development environment: Simply run the following command:
+```bash
+nix develop
+```
+
+This setup provides you with a fully configured environment, allowing you to focus on development without worrying about dependency management.
+
+To ensure that all checks such as the formatting and linter for the repository are passing, use the following command:
+
+```bash
+nix flake check
+```
+
+## CONTRIBUTING
+
+We invite contributions! Open a GitHub issue or pull request! See contributing guildelines [here](./CONTRIBUTING.md).
 
