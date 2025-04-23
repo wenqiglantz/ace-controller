@@ -42,9 +42,9 @@ From the example directory, run below commands:
 ```bash
 cd riva_quickstart_v2.19.0
 chmod +x riva_init.sh riva_clean.sh riva_start.sh
-bash riva_clean.sh ../utils/riva_config.sh
-bash riva_init.sh ../utils/riva_config.sh
-bash riva_start.sh ../utils/riva_config.sh
+bash riva_clean.sh ../../utils/riva_config.sh
+bash riva_init.sh ../../utils/riva_config.sh
+bash riva_start.sh ../../utils/riva_config.sh
 cd ..
 ```
 
